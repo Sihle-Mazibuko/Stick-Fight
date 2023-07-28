@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5715329308651453503}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FIRE POINT (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5715329309451568405}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FIRE POINT (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,7 +74,7 @@ GameObject:
   - component: {fileID: 8843834995290210532}
   - component: {fileID: 3047996924354774654}
   - component: {fileID: -8333275044367960148}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Military Shotgun
   m_TagString: Weapon
   m_Icon: {fileID: 0}
@@ -165,12 +165,12 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 20
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 5
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &-8333275044367960148
 BoxCollider2D:
   m_ObjectHideFlags: 0

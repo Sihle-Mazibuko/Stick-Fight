@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3497808379273246212}
   - component: {fileID: 5003536585448188233}
   - component: {fileID: 5236756047275525566}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AK-47
   m_TagString: Weapon
   m_Icon: {fileID: 0}
@@ -102,12 +102,12 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 20
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 5
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &5236756047275525566
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -143,7 +143,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3815447600645724026}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FIRE POINT (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

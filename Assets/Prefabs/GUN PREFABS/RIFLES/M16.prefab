@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2346840365019770655}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FIRE POINT (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 2659412620806622107}
   - component: {fileID: 3465357634421676394}
   - component: {fileID: 1994978780894111362}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: M16
   m_TagString: Weapon
   m_Icon: {fileID: 0}
@@ -133,12 +133,12 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 20
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 5
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &1994978780894111362
 BoxCollider2D:
   m_ObjectHideFlags: 0
