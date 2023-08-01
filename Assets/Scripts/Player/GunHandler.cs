@@ -96,5 +96,11 @@ public class GunHandler : MonoBehaviour
         weapon.transform.localScale = localScale;
     }
 
-
+    void Shoot()
+    {
+        if (weapon != null)
+        {
+            //bull
+        }
+    }
 }

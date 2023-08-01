@@ -179,14 +179,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 6040350289286467386, guid: 79248d3611639c849ab389d042df0652, type: 3}
-  damage: 0
-  clipSize: 0
-  bulletsPerTap: 0
-  range: 0
-  timeBetweenShooting: 0
-  spread: 0
+  damage: 45
+  clipSize: 10
+  bulletsPerTap: 6
+  range: 100
+  timeBetweenShooting: 1
+  spread: 0.1
   timeBetweenShots: 0
-  allowButtonHold: 0
+  allowButtonHold: 1
   playerLayer:
     serializedVersion: 2
     m_Bits: 0
