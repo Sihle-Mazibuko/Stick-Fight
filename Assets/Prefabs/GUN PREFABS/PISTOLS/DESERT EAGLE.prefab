@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1248578839592520503}
   - component: {fileID: 1691923446618005079}
   - component: {fileID: 58579776886802620}
+  - component: {fileID: -1273345560608262639}
   m_Layer: 6
   m_Name: DESERT EAGLE
   m_TagString: Weapon
@@ -27,8 +28,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1248578839592520457}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.867, y: -1.496, z: 0}
-  m_LocalScale: {x: 6.9445, y: 6.9445, z: 1.3889}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7513516714625402763}
@@ -125,7 +126,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.34133333, y: 0.34133333}
+    oldSize: {x: 2.56, y: 2.56}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -134,6 +135,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.08, y: 0.05}
   m_EdgeRadius: 0
+--- !u!114 &-1273345560608262639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1248578839592520457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15ca059c54522264e92c21e70a9fcdea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 6040350289286467386, guid: 79248d3611639c849ab389d042df0652, type: 3}
+  damage: 0
+  clipSize: 0
+  bulletsPerTap: 0
+  range: 0
+  timeBetweenShooting: 0
+  spread: 0
+  timeBetweenShots: 0
+  allowButtonHold: 0
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  camShake: {fileID: 0}
+  shakeDuration: 0
+  shakeMagnitude: 0
 --- !u!1 &7513516714625402760
 GameObject:
   m_ObjectHideFlags: 0
@@ -146,7 +174,7 @@ GameObject:
   m_Layer: 6
   m_Name: FIRE POINT (1)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -158,7 +186,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7513516714625402760}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.111, y: 0.049, z: 0}
+  m_LocalPosition: {x: 0.277, y: 0.123, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

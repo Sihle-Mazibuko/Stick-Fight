@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2346840365019770654}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.79, y: 0.12, z: 0}
+  m_LocalPosition: {x: 0.714, y: 0.083, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 2659412620806622107}
   - component: {fileID: 3465357634421676394}
   - component: {fileID: 1994978780894111362}
+  - component: {fileID: -2145080007016881618}
   m_Layer: 6
   m_Name: M16
   m_TagString: Weapon
@@ -58,8 +59,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2659412620806622111}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.12, y: -1.74, z: 0}
-  m_LocalScale: {x: 1.3889, y: 1.3889, z: 1.3889}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2346840365019770655}
@@ -156,7 +157,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.0666667, y: 0.53333336}
+    oldSize: {x: 1.4222223, y: 0.7111111}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -165,3 +166,30 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0666667, y: 0.53333336}
   m_EdgeRadius: 0
+--- !u!114 &-2145080007016881618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2659412620806622111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15ca059c54522264e92c21e70a9fcdea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 6040350289286467386, guid: 79248d3611639c849ab389d042df0652, type: 3}
+  damage: 0
+  clipSize: 0
+  bulletsPerTap: 0
+  range: 0
+  timeBetweenShooting: 0
+  spread: 0
+  timeBetweenShots: 0
+  allowButtonHold: 0
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  camShake: {fileID: 0}
+  shakeDuration: 0
+  shakeMagnitude: 0
