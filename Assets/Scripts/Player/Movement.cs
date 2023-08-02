@@ -38,7 +38,7 @@ public class Movement : MonoBehaviour
     {
         horizontal = Input.GetAxisRaw("Horizontal");
 
-        if (Input.GetButtonDown("Jump1") && isGrounded())
+        if (Input.GetButtonDown("Jump") && isGrounded())
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpPower);
             Debug.Log("Jump");
@@ -101,7 +101,7 @@ public class Movement : MonoBehaviour
             wallJumpCounter -= Time.deltaTime;
         }
 
-        if (Input.GetButtonDown("Jump2") && wallJumpCounter > 0f)
+        if (Input.GetButtonDown("Jump") && wallJumpCounter > 0f)
         {
             isWallJump = true;
             rb.velocity = new Vector2(wallJumpDirection * wallJumpPower.x, wallJumpPower.y);
