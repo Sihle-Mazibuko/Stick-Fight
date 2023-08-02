@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Movement : MonoBehaviour
 {
@@ -24,6 +25,13 @@ public class Movement : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Transform wallCheck;
     [SerializeField] private LayerMask wallLayer;
+    [SerializeField] private LayerMask Player1;
+    [SerializeField] private LayerMask Player2;
+
+    private void Awake()
+    {
+        InputSystem.DisableDevice(Keyboard.current);
+    }
 
     // Update is called once per frame
     void Update()
