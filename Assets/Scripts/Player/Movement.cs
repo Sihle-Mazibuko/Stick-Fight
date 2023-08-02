@@ -28,10 +28,7 @@ public class Movement : MonoBehaviour
     //[SerializeField] private LayerMask Player1;
     //[SerializeField] private LayerMask Player2;
 
-    private void Awake()
-    {
-        InputSystem.DisableDevice(Keyboard.current);
-    }
+
 
     // Update is called once per frame
     void Update()
@@ -52,7 +49,7 @@ public class Movement : MonoBehaviour
             Flip();
         }
 
-        //Debug.Log(isGrounded());
+        Debug.Log(isGrounded());
     }
 
     private void FixedUpdate()
