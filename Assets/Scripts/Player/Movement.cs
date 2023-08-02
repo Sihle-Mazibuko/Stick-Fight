@@ -35,7 +35,7 @@ public class Movement : MonoBehaviour
     {
         horizontal = Input.GetAxisRaw("Horizontal");
 
-        if (Input.GetButtonDown("Jump") && isGrounded())
+        if (Input.GetButtonDown("Jump")) //&& isGrounded())
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpPower);
             Debug.Log("Jump");
@@ -49,7 +49,10 @@ public class Movement : MonoBehaviour
             Flip();
         }
 
-        Debug.Log(isGrounded());
+        if (isGrounded() == true)
+        {
+            Debug.Log("ground");
+        }
     }
 
     private void FixedUpdate()
