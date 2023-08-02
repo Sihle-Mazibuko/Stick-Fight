@@ -25,8 +25,8 @@ public class Movement : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Transform wallCheck;
     [SerializeField] private LayerMask wallLayer;
-    [SerializeField] private LayerMask Player1;
-    [SerializeField] private LayerMask Player2;
+    //[SerializeField] private LayerMask Player1;
+    //[SerializeField] private LayerMask Player2;
 
     private void Awake()
     {
@@ -41,6 +41,7 @@ public class Movement : MonoBehaviour
         if (Input.GetButtonDown("Jump1") && isGrounded())
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpPower);
+            Debug.Log("Jump");
         }
 
         WallSlide();
@@ -100,7 +101,7 @@ public class Movement : MonoBehaviour
             wallJumpCounter -= Time.deltaTime;
         }
 
-        if (Input.GetButtonDown("Jump") && wallJumpCounter > 0f)
+        if (Input.GetButtonDown("Jump2") && wallJumpCounter > 0f)
         {
             isWallJump = true;
             rb.velocity = new Vector2(wallJumpDirection * wallJumpPower.x, wallJumpPower.y);
