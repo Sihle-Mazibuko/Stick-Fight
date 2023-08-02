@@ -16,7 +16,7 @@ public class PickUpTwo : MonoBehaviour
     private void FixedUpdate()
     {
         GunRotation();
-        if (Input.GetKeyDown(KeyCode.))
+        if (Input.GetKeyDown(KeyCode.F))
         {
             ThrowWeapon();
         }

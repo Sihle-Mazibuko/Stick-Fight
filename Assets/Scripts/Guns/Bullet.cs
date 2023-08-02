@@ -5,10 +5,11 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     float speed = 100;
+    float lifetime = .1f;
     Rigidbody2D rb;
     Guns guns;
     GameObject weapon;
-    GameObject holder;
+    [SerializeField] GameObject bloodSplatter;
 
     private void Awake()
     {
@@ -26,11 +27,12 @@ public class Bullet : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Health hitPlayer = collision.gameObject.GetComponent<Health>();
+        Instantiate(bloodSplatter, collision.transform.position, Quaternion.identity);
 
         if (hitPlayer != null)
         {
             hitPlayer.TakeDamage(weapon.GetComponentInChildren<Guns>().damage);
         }
-        Destroy(gameObject);
+        Destroy(gameObject, lifetime);
     }
 }

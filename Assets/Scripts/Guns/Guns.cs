@@ -48,8 +48,8 @@ public class Guns : MonoBehaviour
 
     void MyInput()
     {
-        if (allowButtonHold) shooting = Input.GetKey(KeyCode.Mouse0);
-        else shooting = Input.GetKeyDown(KeyCode.Mouse0);
+        if (allowButtonHold) shooting = Input.GetKey(KeyCode.Z);
+        else shooting = Input.GetKeyDown(KeyCode.Z);
 
         if (readyToShoot && shooting && bulletsLeft > 0)
         {
