@@ -70,18 +70,8 @@ public class Guns : MonoBehaviour
 
 
 
-        ////RayCast Shooting
-        //hit = Physics2D.Raycast(transform.position, _direction, range, playerLayer);
-        //if (hit.collider.CompareTag("Player"))
-        //{
-        //    hit.collider.GetComponent<Health>().TakeDamage(damage);
-
-
-        //}
-
         //Prefab shooting
         Instantiate(bulletPref, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
-
 
 
         ////Cam Shake

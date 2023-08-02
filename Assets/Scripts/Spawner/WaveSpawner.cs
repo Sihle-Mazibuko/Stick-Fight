@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
@@ -10,68 +11,52 @@ public class Wave
 {
     public string stageName;
     public int numOfGuns;
-    public int mapOptions;
     public GameObject[] gunType;
-    //public GameObject map;
     public float spawnInterval;
 }
 public class WaveSpawner : MonoBehaviour
 {
     [SerializeField] Wave[] stages;
     [SerializeField] Transform spawnPoint;
-    [SerializeField] TextMeshProUGUI stageName;
     [SerializeField] GameObject roundFinished;
     [SerializeField] Health[] players;
 
+    GameObject[] guns;
     Wave currentWave;
     int currentWaveNUmber;
 
     bool CanSpawn = true;
-    bool canAnimate = false;
-    //[SerializeField]bool isLevelThree = false;
     float nextSpawnTime;
 
-    //[SerializeField] int nextSceneLoad;
 
-    [SerializeField] Animator animtor;
-    //private void Start()
-    //{
-    //    nextSceneLoad = SceneManager.GetActiveScene().buildIndex + 1;
-    //}
+    
+
     private void Update()
     {
+        var playerOneHealth = players[0].GetComponent<Health>().currentHealth;
+        var playerTwoHealth = players[1].GetComponent<Health>().currentHealth;
+
 
         currentWave = stages[currentWaveNUmber];
         SpawnWave();
 
-        GameObject[] guns = GameObject.FindGameObjectsWithTag("Weapon");
-        if (!CanSpawn)
+        guns = GameObject.FindGameObjectsWithTag("Weapon");
+        GameObject[] gunsInstance = guns;
+
+
+
+        if (playerOneHealth == 0|| playerTwoHealth == 0)
         {
-            foreach (GameObject gun in guns)
+
+            playerOneHealth = 100;
+            playerTwoHealth = 100;
+            Debug.Log("a player died");
+            foreach (GameObject gun in gunsInstance)
             {
                 Destroy(gun);
             }
 
-            if (currentWaveNUmber + 1 != stages.Length)
-            {
-                stageName.text = stages[currentWaveNUmber + 1].stageName;
 
-                if (canAnimate)
-                {
-                    stageName.text = stages[currentWaveNUmber + 1].stageName;
-                    animtor.SetTrigger("WaveComplete");
-                    canAnimate = false;
-                }
-            }
-            else
-            {
-                //CompleteLevel();
-                StartCoroutine(NextLevel());
-                //StartCoroutine(EndOfLevelChoices());
-                Debug.Log("level finished");
-
-
-            }
         }
     }
 
@@ -91,19 +76,11 @@ public class WaveSpawner : MonoBehaviour
             Instantiate(randomGun, randomPoint.position, Quaternion.identity);
             currentWave.numOfGuns--;
             nextSpawnTime = Time.time + currentWave.spawnInterval;
-            if(currentWave.numOfGuns == 0)
+            if (currentWave.numOfGuns == 0)
             {
                 CanSpawn = false;
-                canAnimate = true;
             }
         }
-    }
-
-    IEnumerator NextLevel()
-    {
-        roundFinished.SetActive(true);
-        yield return new WaitForSeconds(2);
-        roundFinished.SetActive(false);
     }
 
 

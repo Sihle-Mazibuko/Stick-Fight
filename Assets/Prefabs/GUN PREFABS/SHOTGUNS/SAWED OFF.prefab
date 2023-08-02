@@ -181,8 +181,8 @@ MonoBehaviour:
   bulletPref: {fileID: 6040350289286467386, guid: 79248d3611639c849ab389d042df0652, type: 3}
   bulletSpawnPoint: {fileID: 340865172012580778}
   damage: 45
-  clipSize: 10
-  bulletsPerTap: 6
+  clipSize: 12
+  bulletsPerTap: 2
   range: 100
   timeBetweenShooting: 1
   spread: 0.1
