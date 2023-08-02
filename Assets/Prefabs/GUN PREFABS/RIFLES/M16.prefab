@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2346840365019770654}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.714, y: 0.083, z: 0}
+  m_LocalPosition: {x: 0.547, y: 0.059, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -131,7 +131,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.2
   m_LinearDrag: 20
   m_AngularDrag: 0.05
   m_GravityScale: 5
@@ -178,7 +178,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15ca059c54522264e92c21e70a9fcdea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 6040350289286467386, guid: 79248d3611639c849ab389d042df0652, type: 3}
+  bulletPref: {fileID: 6040350289286467386, guid: 79248d3611639c849ab389d042df0652, type: 3}
+  bulletSpawnPoint: {fileID: 2346840365019770655}
   damage: 15
   clipSize: 30
   bulletsPerTap: 1
@@ -189,7 +190,7 @@ MonoBehaviour:
   allowButtonHold: 1
   playerLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 0
   camShake: {fileID: 0}
   shakeDuration: 0
   shakeMagnitude: 0

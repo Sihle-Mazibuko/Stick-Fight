@@ -45,7 +45,7 @@ public class WaveSpawner : MonoBehaviour
         SpawnWave();
 
         GameObject[] guns = GameObject.FindGameObjectsWithTag("Weapon");
-        if (players[0].GetComponent<Health>().currentHealth == 0 && !CanSpawn || players[1].GetComponent<Health>().currentHealth == 0 && !CanSpawn)
+        if (!CanSpawn)
         {
             foreach (GameObject gun in guns)
             {

@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 1248578839592520456}
   - component: {fileID: 1248578839592520503}
   - component: {fileID: 1691923446618005079}
-  - component: {fileID: 58579776886802620}
   - component: {fileID: -1273345560608262639}
+  - component: {fileID: 4666670793216990603}
   m_Layer: 6
   m_Name: DESERT EAGLE
   m_TagString: Weapon
@@ -100,7 +100,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.2
   m_LinearDrag: 20
   m_AngularDrag: 0.05
   m_GravityScale: 5
@@ -109,7 +109,35 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &58579776886802620
+--- !u!114 &-1273345560608262639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1248578839592520457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15ca059c54522264e92c21e70a9fcdea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPref: {fileID: 6040350289286467386, guid: 79248d3611639c849ab389d042df0652, type: 3}
+  bulletSpawnPoint: {fileID: 7513516714625402763}
+  damage: 25
+  clipSize: 15
+  bulletsPerTap: 1
+  range: 50
+  timeBetweenShooting: 0.5
+  spread: 0.02
+  timeBetweenShots: 0.08
+  allowButtonHold: 0
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  camShake: {fileID: 0}
+  shakeDuration: 0
+  shakeMagnitude: 0
+--- !u!61 &4666670793216990603
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -126,42 +154,15 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.34133333, y: 0.34133333}
+    oldSize: {x: 2.56, y: 2.56}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.08, y: 0.05}
+  m_Size: {x: 0.64296186, y: 0.3972602}
   m_EdgeRadius: 0
---- !u!114 &-1273345560608262639
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1248578839592520457}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15ca059c54522264e92c21e70a9fcdea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bullet: {fileID: 6040350289286467386, guid: 79248d3611639c849ab389d042df0652, type: 3}
-  damage: 25
-  clipSize: 15
-  bulletsPerTap: 1
-  range: 50
-  timeBetweenShooting: 0.5
-  spread: 0.02
-  timeBetweenShots: 0.08
-  allowButtonHold: 1
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 128
-  camShake: {fileID: 0}
-  shakeDuration: 0
-  shakeMagnitude: 0
 --- !u!1 &7513516714625402760
 GameObject:
   m_ObjectHideFlags: 0
@@ -186,7 +187,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7513516714625402760}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.277, y: 0.123, z: 0}
+  m_LocalPosition: {x: 0.294, y: 0.123, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -6,9 +6,8 @@ public class Guns : MonoBehaviour
 {
 
 
-    [SerializeField] GameObject bullet;
-    //GameObject bulletInst;
-    //Transform bulletSpawnPoint;
+    [SerializeField] GameObject bulletPref;
+    [SerializeField]Transform bulletSpawnPoint;
 
 
     public int damage, clipSize, bulletsPerTap, range;
@@ -22,6 +21,9 @@ public class Guns : MonoBehaviour
 
     RaycastHit2D hit;
 
+    bool isEquipped;
+
+
     private void Awake()
     {
         bulletsLeft = clipSize;
@@ -30,13 +32,24 @@ public class Guns : MonoBehaviour
 
     private void FixedUpdate()
     {
-        MyInput();
+        Debug.Log(isEquipped);
+
+        if (transform.parent != null)
+        {
+            readyToShoot = true;
+            isEquipped = true;
+            MyInput();
+        }
+        else
+        {
+            isEquipped = false;
+        }
     }
 
     void MyInput()
     {
-        if (allowButtonHold) shooting = Input.GetKey(0);
-        else shooting = Input.GetKeyDown(0);
+        if (allowButtonHold) shooting = Input.GetKey(KeyCode.Mouse0);
+        else shooting = Input.GetKeyDown(KeyCode.Mouse0);
 
         if (readyToShoot && shooting && bulletsLeft > 0)
         {
@@ -57,17 +70,22 @@ public class Guns : MonoBehaviour
 
 
 
-        //RayCast Shooting
-        hit = Physics2D.Raycast(transform.position, _direction, range, playerLayer);
-        if (hit.collider.CompareTag("Player"))
-        {
-            hit.collider.GetComponent<Health>().TakeDamage(damage);
+        ////RayCast Shooting
+        //hit = Physics2D.Raycast(transform.position, _direction, range, playerLayer);
+        //if (hit.collider.CompareTag("Player"))
+        //{
+        //    hit.collider.GetComponent<Health>().TakeDamage(damage);
 
 
-        }
+        //}
 
-        //Cam Shake
-        camShake.Shake(shakeDuration, shakeMagnitude);
+        //Prefab shooting
+        Instantiate(bulletPref, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+
+
+
+        ////Cam Shake
+        //camShake.Shake(shakeDuration, shakeMagnitude);
 
         bulletsLeft--;
         bulletsShot--;

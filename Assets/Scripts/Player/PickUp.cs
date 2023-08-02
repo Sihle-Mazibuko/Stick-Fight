@@ -1,21 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PickUp : MonoBehaviour
 {
     [SerializeField] 
     Transform weaponHolder;
     GameObject weapon;
-    Vector3 Direction = new Vector3(3,0,0); 
 
     [SerializeField]
     private LayerMask gunMask;
 
     private void FixedUpdate()
     {
-
-        if (Input.GetKeyDown(KeyCode.F) || Input.GetKeyDown(KeyCode.B))
+        GunRotation();
+        if (Input.GetKeyDown(KeyCode.B))
         {
             ThrowWeapon();
         }
@@ -50,17 +50,48 @@ public class PickUp : MonoBehaviour
         }
     }
 
+    [SerializeField]float throwForce;
+
     void ThrowWeapon()
     {
-        if (weapon != null)
+        if (weapon)
         {
-            weapon.transform.position = transform.position + Direction;
-            weapon.transform.parent = null;
+            weapon.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(transform.localScale.x, 0) * throwForce;
+            weapon.transform.parent =null;
             if (weapon.GetComponent<Rigidbody2D>())
             {
                 weapon.GetComponent<Rigidbody2D>().simulated = true;
             }
             weapon = null;
         }
+    }
+
+    //Aiming
+
+    Vector2 worldPos;
+    Vector2 _direction;
+    float angle;
+    void GunRotation()
+    {
+        //Get Mouse Position
+        worldPos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+        _direction = (worldPos - (Vector2)weapon.transform.position).normalized;
+        weapon.transform.right = _direction;
+
+        //Flip when aiming back
+        angle = Mathf.Atan2(_direction.y, _direction.x) * Mathf.Rad2Deg;
+
+        Vector3 localScale = new Vector3(1,1,1);
+        if(angle > 90 ||  angle < -90)
+        {
+            localScale.y = -1f;
+        }
+        else
+        {
+            localScale.y = 1f;
+        }
+
+        weapon.transform.localScale = localScale;
+        
     }
 }

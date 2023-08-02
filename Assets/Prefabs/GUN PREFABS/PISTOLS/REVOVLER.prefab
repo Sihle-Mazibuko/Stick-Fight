@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1482197886458612615}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.294, y: 0.118, z: 0}
+  m_LocalPosition: {x: 0.305, y: 0.118, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -42,8 +42,8 @@ GameObject:
   - component: {fileID: 7892377398602935298}
   - component: {fileID: 7892377398602935357}
   - component: {fileID: 2885953371562859367}
-  - component: {fileID: -1649524134691368398}
   - component: {fileID: -2994910761791384569}
+  - component: {fileID: 4408094881831264937}
   m_Layer: 6
   m_Name: REVOVLER
   m_TagString: Weapon
@@ -131,7 +131,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.2
   m_LinearDrag: 20
   m_AngularDrag: 0.05
   m_GravityScale: 5
@@ -140,32 +140,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &-1649524134691368398
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7892377398602935299}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.34133333, y: 0.34133333}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.08, y: 0.05}
-  m_EdgeRadius: 0
 --- !u!114 &-2994910761791384569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -178,7 +152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15ca059c54522264e92c21e70a9fcdea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 6040350289286467386, guid: 79248d3611639c849ab389d042df0652, type: 3}
+  bulletPref: {fileID: 6040350289286467386, guid: 79248d3611639c849ab389d042df0652, type: 3}
+  bulletSpawnPoint: {fileID: 1482197886458612614}
   damage: 35
   clipSize: 6
   bulletsPerTap: 1
@@ -186,10 +161,36 @@ MonoBehaviour:
   timeBetweenShooting: 0.8
   spread: 0.5
   timeBetweenShots: 1
-  allowButtonHold: 1
+  allowButtonHold: 0
   playerLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 0
   camShake: {fileID: 0}
   shakeDuration: 0
   shakeMagnitude: 0
+--- !u!61 &4408094881831264937
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7892377398602935299}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.008410692, y: 0.008410871}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.56, y: 2.56}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.6271062, y: 0.4028195}
+  m_EdgeRadius: 0
