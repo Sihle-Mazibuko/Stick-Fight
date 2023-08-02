@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class Movement : MonoBehaviour
 {
@@ -25,10 +24,6 @@ public class Movement : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Transform wallCheck;
     [SerializeField] private LayerMask wallLayer;
-    //[SerializeField] private LayerMask Player1;
-    //[SerializeField] private LayerMask Player2;
-
-
 
     // Update is called once per frame
     void Update()
@@ -38,7 +33,6 @@ public class Movement : MonoBehaviour
         if (Input.GetButtonDown("Jump") && isGrounded())
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpPower);
-            Debug.Log("Jump");
         }
 
         WallSlide();
@@ -49,10 +43,7 @@ public class Movement : MonoBehaviour
             Flip();
         }
 
-        if (isGrounded() == true)
-        {
-            Debug.Log("ground");
-        }
+        //Debug.Log(isGrounded());
     }
 
     private void FixedUpdate()
