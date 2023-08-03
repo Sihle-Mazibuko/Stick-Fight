@@ -85,11 +85,11 @@ public class PickUp : MonoBehaviour
         Vector3 localScale = new Vector3(1,1,1);
         if(angle > 90 ||  angle < -90)
         {
-            localScale.y = -1f;
+            localScale.y = -1;
         }
         else
         {
-            localScale.y = 1f;
+            localScale.y = 1;
         }
 
         weapon.transform.localScale = localScale;
