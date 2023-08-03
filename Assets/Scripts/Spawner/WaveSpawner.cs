@@ -53,7 +53,7 @@ public class WaveSpawner : MonoBehaviour
             Debug.Log("a player died");
             foreach (GameObject gun in gunsInstance)
             {
-                Destroy(gun);
+                gun.SetActive(false);
             }
 
 
