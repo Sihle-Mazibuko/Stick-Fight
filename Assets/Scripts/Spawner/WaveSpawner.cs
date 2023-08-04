@@ -13,11 +13,14 @@ public class Wave
     public int numOfGuns;
     public GameObject[] gunType;
     public float spawnInterval;
+    public GameObject map;
+    public Transform gunSpawnPoint;
+
 }
 public class WaveSpawner : MonoBehaviour
 {
     [SerializeField] Wave[] stages;
-    [SerializeField] Transform spawnPoint;
+    //[SerializeField] Transform spawnPoint;
     [SerializeField] GameObject roundFinished;
     [SerializeField] Health[] players;
 
@@ -69,10 +72,11 @@ public class WaveSpawner : MonoBehaviour
 
     void SpawnWave()
     {
+        currentWave.map.SetActive(true);
         if (CanSpawn && nextSpawnTime < Time.time)
         {
             GameObject randomGun = currentWave.gunType[Random.Range(0, currentWave.gunType.Length)];
-            Transform randomPoint = spawnPoint;
+            Transform randomPoint = currentWave.gunSpawnPoint;
             Instantiate(randomGun, randomPoint.position, Quaternion.identity);
             currentWave.numOfGuns--;
             nextSpawnTime = Time.time + currentWave.spawnInterval;
