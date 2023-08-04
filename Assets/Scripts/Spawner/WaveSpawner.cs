@@ -81,6 +81,8 @@ public class WaveSpawner : MonoBehaviour
         else
         {
             Debug.Log("there are no scenes");
+            nextScene = 0;
+            SceneManager.LoadScene(nextScene);
         }
     }
 

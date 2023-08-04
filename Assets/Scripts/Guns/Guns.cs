@@ -52,17 +52,18 @@ public class Guns : MonoBehaviour
         GameObject parent1 = GameObject.Find("WeaponHolder1");
         GameObject parent2 = GameObject.Find("WeaponHolder2");
 
+        Debug.Log(parent2);
+
 
         if (parent1.GetComponentInParent<Movement1>() != null)
         {
             if (allowButtonHold) shooting = Input.GetButton("Fire1");
             else shooting = Input.GetButtonDown("Fire1");
-        }
-        
-        if (parent2.GetComponentInParent<Movement2>() != null)
+        }else if (parent2.GetComponentInParent<Movement2>() != null)
         {
             if (allowButtonHold) shooting = Input.GetKey(KeyCode.Mouse0);
             else shooting = Input.GetKeyDown(KeyCode.Mouse0);
+            Debug.Log("shoot");
         }
 
         if (readyToShoot && shooting && bulletsLeft > 0)
