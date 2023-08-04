@@ -16270,6 +16270,7 @@ MonoBehaviour:
     - {fileID: 1248578839592520457, guid: 0b01717d36bf25a43aeb2f9b143d97cc, type: 3}
     - {fileID: 1060184989563227293, guid: 07557abd9f85eb64bac4bbc0f083d03e, type: 3}
     - {fileID: 7892377398602935299, guid: 03a48c5f5d502634cb0612319235193c, type: 3}
+    - {fileID: 1060184989563227293, guid: 102b8f5e0642966498b2864aa30e8bd8, type: 3}
     spawnInterval: 60
     map: {fileID: 2073428679}
     gunSpawnPoint: {fileID: 1316837043}

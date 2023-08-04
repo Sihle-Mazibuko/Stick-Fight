@@ -17166,6 +17166,70 @@ PrefabInstance:
       propertyPath: stages.Array.data[0].gunSpawnPoint
       value: 
       objectReference: {fileID: 1628830573}
+    - target: {fileID: 7261975939650331184, guid: 327c7f1f05740994682ef9cc1b643282, type: 3}
+      propertyPath: stages.Array.data[0].gunType.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7261975939650331184, guid: 327c7f1f05740994682ef9cc1b643282, type: 3}
+      propertyPath: stages.Array.data[0].gunType.Array.data[1]
+      value: 
+      objectReference: {fileID: 1060184989563227293, guid: 102b8f5e0642966498b2864aa30e8bd8, type: 3}
+    - target: {fileID: 7261975939650331184, guid: 327c7f1f05740994682ef9cc1b643282, type: 3}
+      propertyPath: stages.Array.data[0].gunType.Array.data[2]
+      value: 
+      objectReference: {fileID: 1060184989563227293, guid: 07557abd9f85eb64bac4bbc0f083d03e, type: 3}
+    - target: {fileID: 7261975939650331184, guid: 327c7f1f05740994682ef9cc1b643282, type: 3}
+      propertyPath: stages.Array.data[0].gunType.Array.data[3]
+      value: 
+      objectReference: {fileID: 7892377398602935299, guid: 03a48c5f5d502634cb0612319235193c, type: 3}
+    - target: {fileID: 7261975939650331184, guid: 327c7f1f05740994682ef9cc1b643282, type: 3}
+      propertyPath: stages.Array.data[0].gunType.Array.data[4]
+      value: 
+      objectReference: {fileID: 3497808379273246208, guid: 45b8557b99e24904897fe1a827a15d03, type: 3}
+    - target: {fileID: 7261975939650331184, guid: 327c7f1f05740994682ef9cc1b643282, type: 3}
+      propertyPath: stages.Array.data[0].gunType.Array.data[5]
+      value: 
+      objectReference: {fileID: 4797141778792954168, guid: 955a5d8a326a11748a0ffec783bd23d6, type: 3}
+    - target: {fileID: 7261975939650331184, guid: 327c7f1f05740994682ef9cc1b643282, type: 3}
+      propertyPath: stages.Array.data[0].gunType.Array.data[6]
+      value: 
+      objectReference: {fileID: 4797141778792954168, guid: 6da759a217cba0743864f36248cf01dd, type: 3}
+    - target: {fileID: 7261975939650331184, guid: 327c7f1f05740994682ef9cc1b643282, type: 3}
+      propertyPath: stages.Array.data[0].gunType.Array.data[7]
+      value: 
+      objectReference: {fileID: 2659412620806622111, guid: cfb465f12b88a7945a5f6470cd2fd687, type: 3}
+    - target: {fileID: 7261975939650331184, guid: 327c7f1f05740994682ef9cc1b643282, type: 3}
+      propertyPath: stages.Array.data[0].gunType.Array.data[8]
+      value: 
+      objectReference: {fileID: 8843834995290210552, guid: 0e8d06ed54aa2fc4190330cb794500b5, type: 3}
+    - target: {fileID: 7261975939650331184, guid: 327c7f1f05740994682ef9cc1b643282, type: 3}
+      propertyPath: stages.Array.data[0].gunType.Array.data[9]
+      value: 
+      objectReference: {fileID: 3553779613377653025, guid: 194d44e6b34e92c4db050280b4993edf, type: 3}
+    - target: {fileID: 7261975939650331184, guid: 327c7f1f05740994682ef9cc1b643282, type: 3}
+      propertyPath: stages.Array.data[0].gunType.Array.data[10]
+      value: 
+      objectReference: {fileID: 3497808379273246208, guid: 45b8557b99e24904897fe1a827a15d03, type: 3}
+    - target: {fileID: 7261975939650331184, guid: 327c7f1f05740994682ef9cc1b643282, type: 3}
+      propertyPath: stages.Array.data[0].gunType.Array.data[11]
+      value: 
+      objectReference: {fileID: 4797141778792954168, guid: 955a5d8a326a11748a0ffec783bd23d6, type: 3}
+    - target: {fileID: 7261975939650331184, guid: 327c7f1f05740994682ef9cc1b643282, type: 3}
+      propertyPath: stages.Array.data[0].gunType.Array.data[12]
+      value: 
+      objectReference: {fileID: 4797141778792954168, guid: 6da759a217cba0743864f36248cf01dd, type: 3}
+    - target: {fileID: 7261975939650331184, guid: 327c7f1f05740994682ef9cc1b643282, type: 3}
+      propertyPath: stages.Array.data[0].gunType.Array.data[13]
+      value: 
+      objectReference: {fileID: 2659412620806622111, guid: cfb465f12b88a7945a5f6470cd2fd687, type: 3}
+    - target: {fileID: 7261975939650331184, guid: 327c7f1f05740994682ef9cc1b643282, type: 3}
+      propertyPath: stages.Array.data[0].gunType.Array.data[14]
+      value: 
+      objectReference: {fileID: 8843834995290210552, guid: 0e8d06ed54aa2fc4190330cb794500b5, type: 3}
+    - target: {fileID: 7261975939650331184, guid: 327c7f1f05740994682ef9cc1b643282, type: 3}
+      propertyPath: stages.Array.data[0].gunType.Array.data[15]
+      value: 
+      objectReference: {fileID: 3553779613377653025, guid: 194d44e6b34e92c4db050280b4993edf, type: 3}
     - target: {fileID: 7261975939650331185, guid: 327c7f1f05740994682ef9cc1b643282, type: 3}
       propertyPath: m_RootOrder
       value: 5

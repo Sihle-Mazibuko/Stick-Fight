@@ -24,11 +24,17 @@ public class Guns : MonoBehaviour
 
     bool isEquipped;
 
+    AudioSource src;
+    [SerializeField] AudioClip gunShot;
+
+    [SerializeField] AudioClip gunEmpty;
+
 
     private void Awake()
     {
         bulletsLeft = clipSize;
         readyToShoot = true;
+        src = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -73,12 +79,17 @@ public class Guns : MonoBehaviour
         }
     }
 
+
     void Shoot()
     {
         Debug.Log("shoot");
         readyToShoot = false;
 
         GameObject player = bulletSpawnPoint.parent.gameObject;
+
+        //Sounds
+        src.clip = gunShot;
+        src.Play();
 
         //Bullet Spread
         float x = Random.Range(-spread, spread);
@@ -92,15 +103,16 @@ public class Guns : MonoBehaviour
         Instantiate(bulletPref, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
 
 
-        ////Cam Shake
-        //camShake.Shake(shakeDuration, shakeMagnitude);
-
         bulletsLeft--;
         bulletsShot--;
         Invoke("ResetShot", timeBetweenShooting);
 
         if (bulletsShot > 0 && bulletsLeft > 0)
             Invoke("Shoot", timeBetweenShots);
+        else
+        {
+
+        }
 
     }
 

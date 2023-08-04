@@ -3111,6 +3111,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6714337796616750683, guid: 1cfd44d4ea3af5e4a85ef6d43a5e576b, type: 3}
   m_PrefabInstance: {fileID: 2033870190}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &478266975 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 923743464080072535, guid: c0e1c28ad88f11e4ca71cc40cea8cc7a, type: 3}
+  m_PrefabInstance: {fileID: 13026798}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34f74a7aa98ff3746be5c801fc855149, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &479083094
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4641,7 +4652,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &606860590
 Transform:
   m_ObjectHideFlags: 0
@@ -16142,12 +16153,13 @@ MonoBehaviour:
     - {fileID: 1248578839592520457, guid: 0b01717d36bf25a43aeb2f9b143d97cc, type: 3}
     - {fileID: 1060184989563227293, guid: 07557abd9f85eb64bac4bbc0f083d03e, type: 3}
     - {fileID: 7892377398602935299, guid: 03a48c5f5d502634cb0612319235193c, type: 3}
+    - {fileID: 1060184989563227293, guid: 102b8f5e0642966498b2864aa30e8bd8, type: 3}
     spawnInterval: 60
     map: {fileID: 606860589}
     gunSpawnPoint: {fileID: 1003247168}
   players:
   - {fileID: 1742052658}
-  - {fileID: 0}
+  - {fileID: 478266975}
   animator: {fileID: 2009829432}
   waveName: {fileID: 435169934}
 --- !u!4 &2009829431
