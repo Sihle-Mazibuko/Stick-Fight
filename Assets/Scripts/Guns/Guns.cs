@@ -51,7 +51,6 @@ public class Guns : MonoBehaviour
     void MyInput()
     {
         GameObject parent = GameObject.Find("WeaponHolder");
-        //Debug.Log(LayerMask.GetMask(mask.ToString()));
 
 
         if (parent.GetComponentInParent<Movement1>() != null)
@@ -109,9 +108,6 @@ public class Guns : MonoBehaviour
         readyToShoot = true;
     }
 
-    //Cam Shake
-    public CamShake camShake;
-    [SerializeField] float shakeDuration, shakeMagnitude;
 
 
 }

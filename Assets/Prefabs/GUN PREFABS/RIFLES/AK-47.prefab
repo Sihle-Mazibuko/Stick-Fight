@@ -149,6 +149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPref: {fileID: 6040350289286467386, guid: 79248d3611639c849ab389d042df0652, type: 3}
   bulletSpawnPoint: {fileID: 3815447600645724026}
+  isPlayer1: 0
   damage: 23
   clipSize: 30
   bulletsPerTap: 1
@@ -160,9 +161,6 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 0
-  camShake: {fileID: 0}
-  shakeDuration: 0
-  shakeMagnitude: 0
 --- !u!1 &3815447600645724027
 GameObject:
   m_ObjectHideFlags: 0

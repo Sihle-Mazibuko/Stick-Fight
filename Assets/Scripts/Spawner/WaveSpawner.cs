@@ -33,7 +33,18 @@ public class WaveSpawner : MonoBehaviour
     [SerializeField] Animator animator;
     [SerializeField] TextMeshProUGUI waveName;
 
-    bool canAnimate = false;
+    int currentScene;
+    int nextScene;
+
+
+
+
+    private void Start()
+    {
+        currentScene = SceneManager.GetActiveScene().buildIndex;
+        nextScene = SceneManager.GetActiveScene().buildIndex + 1;
+
+    }
 
 
     private void LateUpdate()
@@ -48,7 +59,7 @@ public class WaveSpawner : MonoBehaviour
         guns = GameObject.FindGameObjectsWithTag("Weapon");
         GameObject[] gunsInstance = guns;
 
-        if ((playerOneHealth == 0|| playerTwoHealth == 0) && canAnimate)
+        if (playerOneHealth == 0|| playerTwoHealth == 0)
         {
 
             foreach (GameObject gun in gunsInstance)
@@ -56,19 +67,9 @@ public class WaveSpawner : MonoBehaviour
                 gun.SetActive(false);
             }
             Debug.Log("a player died");
-            animator.SetTrigger("WaveDone");
-            canAnimate = false;
+            LoadNextLevel();
 
         }
-    }
-    int currentScene;
-    int nextScene;
-
-    private void Awake()
-    {
-        currentScene = SceneManager.GetActiveScene().buildIndex;
-        nextScene = SceneManager.GetActiveScene().buildIndex + 1;
-
     }
 
     public void LoadNextLevel()
@@ -96,7 +97,6 @@ public class WaveSpawner : MonoBehaviour
             if (currentWave.numOfGuns == 0)
             {
                 CanSpawn = false;
-                canAnimate = true;
             }
         }
     }
