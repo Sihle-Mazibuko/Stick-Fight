@@ -5903,6 +5903,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cfd44d4ea3af5e4a85ef6d43a5e576b, type: 3}
+--- !u!114 &741438520 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 923743464080072535, guid: c0e1c28ad88f11e4ca71cc40cea8cc7a, type: 3}
+  m_PrefabInstance: {fileID: 13026798}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34f74a7aa98ff3746be5c801fc855149, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &745855957
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11439,7 +11450,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1354896134}
   m_Layer: 7
-  m_Name: WeaponHolder
+  m_Name: WeaponHolder1
   m_TagString: Untagged
   m_Icon: {fileID: 7422848464349959988, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -16418,7 +16429,7 @@ MonoBehaviour:
     gunSpawnPoint: {fileID: 1003247168}
   players:
   - {fileID: 1742052658}
-  - {fileID: 0}
+  - {fileID: 741438520}
   animator: {fileID: 2009829432}
   waveName: {fileID: 435169934}
 --- !u!4 &2009829431
