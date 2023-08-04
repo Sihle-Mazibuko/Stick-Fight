@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    public float startHealth { get; private set; }
-    public float currentHealth { get; private set; }
+    public float startHealth;
+    public float currentHealth;
 
     private void Awake()
     {
@@ -15,7 +15,7 @@ public class Health : MonoBehaviour
 
     public void TakeDamage(float _damage)
     {
-        currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startHealth);
+        currentHealth -= _damage;
 
         if (currentHealth > 0)
         {

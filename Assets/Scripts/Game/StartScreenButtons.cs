@@ -9,4 +9,14 @@ public class StartScreenButtons : MonoBehaviour
     {
         SceneManager.LoadScene("LevelOne");
     }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
+
+    public void Reset()
+    {
+        SceneManager.LoadScene("StartScene");
+    }
 }
