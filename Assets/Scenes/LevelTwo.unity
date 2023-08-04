@@ -296,7 +296,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 79862270}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: ' PILLAR'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -789,7 +789,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 144222505}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: '"PILLAR" (1)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1284,7 +1284,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 216534996}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: SpawnPoints (3)
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -1723,7 +1723,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 281149956}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: ' PILLAR (1)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3002,7 +3002,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 472457926}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: STRUCTURE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3409,37 +3409,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &493561603
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 493561604}
-  m_Layer: 9
-  m_Name: WallCheck
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &493561604
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 493561603}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 568478112}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &499385034
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3875,7 +3844,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 538605918}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: SUPPORTS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4186,8 +4155,6 @@ GameObject:
   - component: {fileID: 568478110}
   - component: {fileID: 568478109}
   - component: {fileID: 568478108}
-  - component: {fileID: 568478113}
-  - component: {fileID: 568478114}
   m_Layer: 9
   m_Name: 2
   m_TagString: Player
@@ -4245,10 +4212,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 5
+  m_Mass: 20
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 4
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 1
   m_SleepingMode: 0
@@ -4319,54 +4286,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1588267702}
-  - {fileID: 888932876}
-  - {fileID: 493561604}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &568478113
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 568478107}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb4027b38501337478071f925c93e8d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 8
-  jumpPower: 16
-  wallSlideSpeed: 2
-  wallJumpTime: 0.2
-  wallJumpDuration: 0.2
-  rb: {fileID: 568478110}
-  groundCheck: {fileID: 888932876}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 256
-  wallCheck: {fileID: 493561604}
-  wallLayer:
-    serializedVersion: 2
-    m_Bits: 256
---- !u!114 &568478114
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 568478107}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46b7b4a111fbd6247afbcc6272fca4c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weaponHolder: {fileID: 1588267702}
-  gunMask:
-    serializedVersion: 2
-    m_Bits: 64
-  throwForce: 1000
 --- !u!1001 &575793256
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4803,7 +4725,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 606860590}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: LEVEL 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5282,7 +5204,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 671548992}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: STRUCTURE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5333,7 +5255,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 674259886}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: UPPER PLATFORM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5691,7 +5613,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 722158608}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: LEVEL 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6261,7 +6183,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 769592239}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: MIDDLE PLATFORM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6712,7 +6634,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 823354687}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: '"PILLAR" (3)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7646,37 +7568,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cfd44d4ea3af5e4a85ef6d43a5e576b, type: 3}
---- !u!1 &888932875
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 888932876}
-  m_Layer: 9
-  m_Name: GroundCheck
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &888932876
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 888932875}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.97, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 568478112}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &889126609
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8536,7 +8427,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1003247168}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: SpawnPoints (1)
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -8831,7 +8722,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1035313537}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: FLOOR BOXES
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9112,7 +9003,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1052965398}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: STRUCTURE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9164,7 +9055,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1053504158}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: PILLARS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10123,7 +10014,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1145627750}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: SUPPORTS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10700,7 +10591,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1230680335}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: SUPPORTS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11192,7 +11083,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1302701419}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: ' PILLAR (2)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11245,7 +11136,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1316837043}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: SpawnPoints
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -11279,7 +11170,7 @@ GameObject:
   - component: {fileID: 1338135099}
   - component: {fileID: 1338135098}
   - component: {fileID: 1338135097}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: BEAM (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11689,7 +11580,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1386169033}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: BOXES
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12060,7 +11951,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1477279270}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: LOWER PLATFORM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12355,7 +12246,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1500714854}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: SUPPORTS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12693,7 +12584,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1588116360}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: STRUCTURE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12989,13 +12880,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1622102790}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: LEVEL 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1622102790
 Transform:
   m_ObjectHideFlags: 0
@@ -13026,7 +12917,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1628830573}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: SpawnPoints (2)
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -13122,7 +13013,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1639510236}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: ' PILLAR'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14008,7 +13899,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1745802834}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: STRUCTURE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14295,7 +14186,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1776030591}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: '"PILLAR"'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15711,7 +15602,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1897649310}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: '"PILLAR" (2)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16102,7 +15993,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1972382320}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: ' PILLAR (3)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16373,44 +16264,8 @@ MonoBehaviour:
     - {fileID: 1060184989563227293, guid: 07557abd9f85eb64bac4bbc0f083d03e, type: 3}
     - {fileID: 7892377398602935299, guid: 03a48c5f5d502634cb0612319235193c, type: 3}
     spawnInterval: 60
-    map: {fileID: 2073428679}
-    gunSpawnPoint: {fileID: 1316837043}
-  - stageName: Map 2
-    numOfGuns: 8
-    gunType:
-    - {fileID: 1248578839592520457, guid: 0b01717d36bf25a43aeb2f9b143d97cc, type: 3}
-    - {fileID: 1060184989563227293, guid: 07557abd9f85eb64bac4bbc0f083d03e, type: 3}
-    - {fileID: 7892377398602935299, guid: 03a48c5f5d502634cb0612319235193c, type: 3}
-    - {fileID: 3497808379273246208, guid: 45b8557b99e24904897fe1a827a15d03, type: 3}
-    - {fileID: 4797141778792954168, guid: 955a5d8a326a11748a0ffec783bd23d6, type: 3}
-    - {fileID: 2659412620806622111, guid: cfb465f12b88a7945a5f6470cd2fd687, type: 3}
-    - {fileID: 8843834995290210552, guid: 0e8d06ed54aa2fc4190330cb794500b5, type: 3}
-    - {fileID: 3553779613377653025, guid: 194d44e6b34e92c4db050280b4993edf, type: 3}
-    spawnInterval: 60
     map: {fileID: 606860589}
     gunSpawnPoint: {fileID: 1003247168}
-  - stageName: Map 3
-    numOfGuns: 8
-    gunType:
-    - {fileID: 3497808379273246208, guid: 45b8557b99e24904897fe1a827a15d03, type: 3}
-    - {fileID: 4797141778792954168, guid: 955a5d8a326a11748a0ffec783bd23d6, type: 3}
-    - {fileID: 2659412620806622111, guid: cfb465f12b88a7945a5f6470cd2fd687, type: 3}
-    - {fileID: 8843834995290210552, guid: 0e8d06ed54aa2fc4190330cb794500b5, type: 3}
-    - {fileID: 3553779613377653025, guid: 194d44e6b34e92c4db050280b4993edf, type: 3}
-    spawnInterval: 30
-    map: {fileID: 1622102789}
-    gunSpawnPoint: {fileID: 216534996}
-  - stageName: Map 4
-    numOfGuns: 8
-    gunType:
-    - {fileID: 1248578839592520457, guid: 0b01717d36bf25a43aeb2f9b143d97cc, type: 3}
-    - {fileID: 1060184989563227293, guid: 07557abd9f85eb64bac4bbc0f083d03e, type: 3}
-    - {fileID: 7892377398602935299, guid: 03a48c5f5d502634cb0612319235193c, type: 3}
-    - {fileID: 8843834995290210552, guid: 0e8d06ed54aa2fc4190330cb794500b5, type: 3}
-    - {fileID: 3553779613377653025, guid: 194d44e6b34e92c4db050280b4993edf, type: 3}
-    spawnInterval: 30
-    map: {fileID: 722158607}
-    gunSpawnPoint: {fileID: 1628830573}
   players:
   - {fileID: 1742052658}
   - {fileID: 568478109}
@@ -16466,7 +16321,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2017525090}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: ' PILLAR (1)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17322,7 +17177,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2073428680}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: LEVEL ONE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17706,7 +17561,7 @@ GameObject:
   - component: {fileID: 2136379546}
   - component: {fileID: 2136379545}
   - component: {fileID: 2136379544}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: BEAM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
