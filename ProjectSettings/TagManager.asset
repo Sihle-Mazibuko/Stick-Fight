@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Weapon
+  - Killfloor
   layers:
   - Default
   - TransparentFX

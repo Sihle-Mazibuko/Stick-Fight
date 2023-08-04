@@ -7,7 +7,6 @@ public class Health : MonoBehaviour
     public float startHealth;
     public float currentHealth;
 
-    public GameObject killFloor;
 
     private void Awake()
     {
@@ -29,13 +28,21 @@ public class Health : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        GameObject killfloor = GameObject.FindGameObjectWithTag("Killfloor");
+        if (killfloor != null)
+        {
+            currentHealth = 0;
+        }
+
+    }
+
     private void Update()
     {
         if(Input.GetKeyDown(KeyCode.U))
         {
             TakeDamage(90);
         }
-
-
     }
 }
