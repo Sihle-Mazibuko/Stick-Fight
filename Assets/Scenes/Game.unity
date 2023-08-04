@@ -6441,7 +6441,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6714337796616750683, guid: 1cfd44d4ea3af5e4a85ef6d43a5e576b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.58
+      value: 7.5
       objectReference: {fileID: 0}
     - target: {fileID: 6714337796616750683, guid: 1cfd44d4ea3af5e4a85ef6d43a5e576b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8591,7 +8591,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6280576602658803356, guid: 1cfd44d4ea3af5e4a85ef6d43a5e576b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6714337796616750683, guid: 1cfd44d4ea3af5e4a85ef6d43a5e576b, type: 3}
       propertyPath: m_RootOrder
@@ -9115,7 +9115,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6714337796616750683, guid: 1cfd44d4ea3af5e4a85ef6d43a5e576b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.76
+      value: -7.5
       objectReference: {fileID: 0}
     - target: {fileID: 6714337796616750683, guid: 1cfd44d4ea3af5e4a85ef6d43a5e576b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10129,7 +10129,7 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4294967295
   m_fontSize: 72
-  m_fontSizeBase: 36
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
@@ -12760,7 +12760,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6714337796616750683, guid: 1cfd44d4ea3af5e4a85ef6d43a5e576b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.58
+      value: 7.5
       objectReference: {fileID: 0}
     - target: {fileID: 6714337796616750683, guid: 1cfd44d4ea3af5e4a85ef6d43a5e576b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -12886,7 +12886,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1622102790
 Transform:
   m_ObjectHideFlags: 0
@@ -14892,7 +14892,7 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4294967295
   m_fontSize: 72
-  m_fontSizeBase: 36
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
@@ -15722,7 +15722,7 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4294967295
   m_fontSize: 72
-  m_fontSizeBase: 36
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
@@ -16266,7 +16266,6 @@ MonoBehaviour:
     spawnInterval: 60
     map: {fileID: 2073428679}
     gunSpawnPoint: {fileID: 1316837043}
-    playerSpawnPoint: {fileID: 0}
   - stageName: Map 2
     numOfGuns: 8
     gunType:
@@ -16281,7 +16280,6 @@ MonoBehaviour:
     spawnInterval: 60
     map: {fileID: 606860589}
     gunSpawnPoint: {fileID: 1003247168}
-    playerSpawnPoint: {fileID: 0}
   - stageName: Map 3
     numOfGuns: 8
     gunType:
@@ -16293,7 +16291,6 @@ MonoBehaviour:
     spawnInterval: 30
     map: {fileID: 1622102789}
     gunSpawnPoint: {fileID: 216534996}
-    playerSpawnPoint: {fileID: 0}
   - stageName: Map 4
     numOfGuns: 8
     gunType:
@@ -16305,11 +16302,11 @@ MonoBehaviour:
     spawnInterval: 30
     map: {fileID: 722158607}
     gunSpawnPoint: {fileID: 1628830573}
-    playerSpawnPoint: {fileID: 0}
-  roundFinished: {fileID: 0}
   players:
   - {fileID: 1742052658}
   - {fileID: 568478109}
+  animator: {fileID: 2009829432}
+  waveName: {fileID: 435169934}
 --- !u!4 &2009829431
 Transform:
   m_ObjectHideFlags: 0
@@ -17222,7 +17219,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2073428680
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17342,7 +17339,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6714337796616750683, guid: 1cfd44d4ea3af5e4a85ef6d43a5e576b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.76
+      value: -7.5
       objectReference: {fileID: 0}
     - target: {fileID: 6714337796616750683, guid: 1cfd44d4ea3af5e4a85ef6d43a5e576b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -17996,7 +17993,7 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4294967295
   m_fontSize: 72
-  m_fontSizeBase: 36
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18

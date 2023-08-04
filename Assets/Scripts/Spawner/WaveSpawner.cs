@@ -15,13 +15,12 @@ public class Wave
     public float spawnInterval;
     public GameObject map;
     public Transform gunSpawnPoint;
-    public Transform playerSpawnPoint;
+    //public Transform playerSpawnPoint;
 
 }
 public class WaveSpawner : MonoBehaviour
 {
     [SerializeField] Wave[] stages;
-    [SerializeField] GameObject roundFinished;
     [SerializeField] Health[] players;
 
     GameObject[] guns;
@@ -31,10 +30,12 @@ public class WaveSpawner : MonoBehaviour
     bool CanSpawn = true;
     float nextSpawnTime;
 
+    [SerializeField] Animator animator;
+    [SerializeField] TextMeshProUGUI waveName;
 
     
 
-    private void Update()
+    private void LateUpdate()
     {
         var playerOneHealth = players[0].GetComponent<Health>().currentHealth;
         var playerTwoHealth = players[1].GetComponent<Health>().currentHealth;
@@ -51,14 +52,16 @@ public class WaveSpawner : MonoBehaviour
         if (playerOneHealth == 0|| playerTwoHealth == 0)
         {
 
-            playerOneHealth = 100;
-            playerTwoHealth = 100;
-            Debug.Log("a player died");
+            playerOneHealth += 100;
+            playerTwoHealth += 100;
+
             foreach (GameObject gun in gunsInstance)
             {
                 gun.SetActive(false);
             }
-
+            Debug.Log("a player died");
+            waveName.text = stages[currentWaveNUmber + 1].stageName;
+            animator.SetTrigger("WaveDone");
 
         }
     }
@@ -67,13 +70,20 @@ public class WaveSpawner : MonoBehaviour
     {
         currentWaveNUmber++;
         CanSpawn = true;
+        currentWave.map.SetActive(false);
+        var playerOneHealth = players[0].GetComponent<Health>().currentHealth;
+        var playerTwoHealth = players[1].GetComponent<Health>().currentHealth;
+
+        playerOneHealth += 100;
+        playerTwoHealth += 100;
+
+
 
     }
 
     void SpawnWave()
     {
         currentWave.map.SetActive(true);
-        players[0].transform.position = currentWave.playerSpawnPoint.transform.position;
         if (CanSpawn && nextSpawnTime < Time.time)
         {
             GameObject randomGun = currentWave.gunType[Random.Range(0, currentWave.gunType.Length)];
