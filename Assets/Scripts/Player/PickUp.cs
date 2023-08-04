@@ -77,26 +77,26 @@ public class PickUp : MonoBehaviour
     void GunRotation()
     {
         //Get Mouse Position
-        worldPos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
-        _direction = (worldPos - (Vector2)weapon.transform.parent.position).normalized;
-        weapon.transform.parent.right = _direction;
+        //worldPos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+        //_direction = (worldPos - (Vector2)weapon.transform.parent.position).normalized;
+        //weapon.transform.parent.right = _direction;
 
         //Flip when aiming back
-        angle = Mathf.Atan2(_direction.y, _direction.x) * Mathf.Rad2Deg;
+        //angle = Mathf.Atan2(_direction.y, _direction.x) * Mathf.Rad2Deg;
 
         Vector3 localScale = new Vector3(1, 1, 1);
-        if (angle > 90 || angle < -90)
-        {
+        //if (angle > 90 || angle < -90)
+        //{
             //localScale.x = -1f;
-            localScale.y = -1f;
-        }
-        else
-        {
-            localScale.x = 1f;
+            //localScale.y = -1f;
+        //}
+        //else
+        //{
+            //localScale.x = 1f;
             //localScale.y = 1f;
-        }
+        //}
 
-        weapon.transform.localScale = localScale;
+        //weapon.transform.localScale = localScale;
 
 
 

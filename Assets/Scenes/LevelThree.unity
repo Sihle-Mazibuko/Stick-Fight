@@ -11222,7 +11222,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1354896134}
   m_Layer: 7
-  m_Name: WeaponHolder
+  m_Name: WeaponHolder1
   m_TagString: Untagged
   m_Icon: {fileID: 7422848464349959988, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -13780,6 +13780,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   throwForce: 1000
+  twist: {fileID: 0}
 --- !u!1 &1745802833
 GameObject:
   m_ObjectHideFlags: 0

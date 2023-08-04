@@ -39,7 +39,6 @@ public class Guns : MonoBehaviour
         {
             readyToShoot = true;
             isEquipped = true;
-            //if (parent.GetComponent<Movement1>() && Input.Get("Fire1")
             MyInput();
         }
         else
@@ -50,16 +49,17 @@ public class Guns : MonoBehaviour
 
     void MyInput()
     {
-        GameObject parent = GameObject.Find("WeaponHolder");
+        GameObject parent1 = GameObject.Find("WeaponHolder1");
+        GameObject parent2 = GameObject.Find("WeaponHolder2");
 
 
-        if (parent.GetComponentInParent<Movement1>() != null)
+        if (parent1.GetComponentInParent<Movement1>() != null)
         {
             if (allowButtonHold) shooting = Input.GetButton("Fire1");
             else shooting = Input.GetButtonDown("Fire1");
         }
         
-        if (parent.GetComponentInParent<Movement2>() != null)
+        if (parent2.GetComponentInParent<Movement2>() != null)
         {
             if (allowButtonHold) shooting = Input.GetKey(KeyCode.Mouse0);
             else shooting = Input.GetKeyDown(KeyCode.Mouse0);
