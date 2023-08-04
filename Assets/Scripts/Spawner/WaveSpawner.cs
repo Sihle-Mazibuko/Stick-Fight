@@ -35,6 +35,7 @@ public class WaveSpawner : MonoBehaviour
 
     bool canAnimate = false;
 
+
     private void LateUpdate()
     {
         var playerOneHealth = players[0].GetComponent<Health>().currentHealth;
@@ -47,36 +48,38 @@ public class WaveSpawner : MonoBehaviour
         guns = GameObject.FindGameObjectsWithTag("Weapon");
         GameObject[] gunsInstance = guns;
 
-
-
-        if ((playerOneHealth == 0|| playerTwoHealth == 0) && canAnimate && currentWaveNUmber+1 != stages.Length)
+        if ((playerOneHealth == 0|| playerTwoHealth == 0) && canAnimate)
         {
-
-            playerOneHealth += 100;
-            playerTwoHealth += 100;
 
             foreach (GameObject gun in gunsInstance)
             {
                 gun.SetActive(false);
             }
             Debug.Log("a player died");
-            waveName.text = stages[currentWaveNUmber + 1].stageName;
             animator.SetTrigger("WaveDone");
             canAnimate = false;
 
         }
     }
+    int currentScene;
+    int nextScene;
 
-    void SpawnNextWave()
+    private void Awake()
     {
-        currentWaveNUmber++;
-        CanSpawn = true;
-        currentWave.map.SetActive(false);
+        currentScene = SceneManager.GetActiveScene().buildIndex;
+        nextScene = SceneManager.GetActiveScene().buildIndex + 1;
 
+    }
 
-        foreach (var player in players)
+    public void LoadNextLevel()
+    {
+        if(nextScene < SceneManager.sceneCountInBuildSettings)
         {
-            //player.currentHealth = 100;
+            SceneManager.LoadScene(nextScene);
+        }
+        else
+        {
+            Debug.Log("there are no scenes");
         }
     }
 

@@ -62,6 +62,8 @@ public class Guns : MonoBehaviour
     {
         readyToShoot = false;
 
+        GameObject player = bulletSpawnPoint.parent.gameObject;
+
         //Bullet Spread
         float x = Random.Range(-spread, spread);
         float y = Random.Range(-spread, spread);
@@ -83,7 +85,6 @@ public class Guns : MonoBehaviour
 
         if (bulletsShot > 0 && bulletsLeft > 0)
             Invoke("Shoot", timeBetweenShots);
-
 
     }
 

@@ -76,8 +76,8 @@ public class PickUp : MonoBehaviour
     {
         //Get Mouse Position
         worldPos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
-        _direction = (worldPos - (Vector2)weapon.transform.parent.position).normalized;
-       weapon.transform.parent.right = _direction;
+        _direction = (worldPos - (Vector2)weapon.transform.position).normalized;
+       weapon.transform.right = _direction;
 
         //Flip when aiming back
         angle = Mathf.Atan2(_direction.y, _direction.x) * Mathf.Rad2Deg;

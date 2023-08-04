@@ -12886,7 +12886,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1622102790
 Transform:
   m_ObjectHideFlags: 0
@@ -16264,44 +16264,8 @@ MonoBehaviour:
     - {fileID: 1060184989563227293, guid: 07557abd9f85eb64bac4bbc0f083d03e, type: 3}
     - {fileID: 7892377398602935299, guid: 03a48c5f5d502634cb0612319235193c, type: 3}
     spawnInterval: 60
-    map: {fileID: 2073428679}
-    gunSpawnPoint: {fileID: 1316837043}
-  - stageName: Map 2
-    numOfGuns: 8
-    gunType:
-    - {fileID: 1248578839592520457, guid: 0b01717d36bf25a43aeb2f9b143d97cc, type: 3}
-    - {fileID: 1060184989563227293, guid: 07557abd9f85eb64bac4bbc0f083d03e, type: 3}
-    - {fileID: 7892377398602935299, guid: 03a48c5f5d502634cb0612319235193c, type: 3}
-    - {fileID: 3497808379273246208, guid: 45b8557b99e24904897fe1a827a15d03, type: 3}
-    - {fileID: 4797141778792954168, guid: 955a5d8a326a11748a0ffec783bd23d6, type: 3}
-    - {fileID: 2659412620806622111, guid: cfb465f12b88a7945a5f6470cd2fd687, type: 3}
-    - {fileID: 8843834995290210552, guid: 0e8d06ed54aa2fc4190330cb794500b5, type: 3}
-    - {fileID: 3553779613377653025, guid: 194d44e6b34e92c4db050280b4993edf, type: 3}
-    spawnInterval: 60
     map: {fileID: 606860589}
     gunSpawnPoint: {fileID: 1003247168}
-  - stageName: Map 3
-    numOfGuns: 8
-    gunType:
-    - {fileID: 3497808379273246208, guid: 45b8557b99e24904897fe1a827a15d03, type: 3}
-    - {fileID: 4797141778792954168, guid: 955a5d8a326a11748a0ffec783bd23d6, type: 3}
-    - {fileID: 2659412620806622111, guid: cfb465f12b88a7945a5f6470cd2fd687, type: 3}
-    - {fileID: 8843834995290210552, guid: 0e8d06ed54aa2fc4190330cb794500b5, type: 3}
-    - {fileID: 3553779613377653025, guid: 194d44e6b34e92c4db050280b4993edf, type: 3}
-    spawnInterval: 30
-    map: {fileID: 1622102789}
-    gunSpawnPoint: {fileID: 216534996}
-  - stageName: Map 4
-    numOfGuns: 8
-    gunType:
-    - {fileID: 1248578839592520457, guid: 0b01717d36bf25a43aeb2f9b143d97cc, type: 3}
-    - {fileID: 1060184989563227293, guid: 07557abd9f85eb64bac4bbc0f083d03e, type: 3}
-    - {fileID: 7892377398602935299, guid: 03a48c5f5d502634cb0612319235193c, type: 3}
-    - {fileID: 8843834995290210552, guid: 0e8d06ed54aa2fc4190330cb794500b5, type: 3}
-    - {fileID: 3553779613377653025, guid: 194d44e6b34e92c4db050280b4993edf, type: 3}
-    spawnInterval: 30
-    map: {fileID: 722158607}
-    gunSpawnPoint: {fileID: 1628830573}
   players:
   - {fileID: 1742052658}
   - {fileID: 568478109}
