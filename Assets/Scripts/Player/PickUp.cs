@@ -42,6 +42,7 @@ public class PickUp : MonoBehaviour
                 weapon = weaponItem.gameObject;
                 weapon.transform.position = weaponHolder.position;
                 weapon.transform.parent = weaponHolder;
+                twist = weapon.transform;
                 if (weapon.GetComponent<Rigidbody2D>())
                 {
                     weapon.GetComponent<Rigidbody2D>().simulated = false;
@@ -69,9 +70,10 @@ public class PickUp : MonoBehaviour
 
     //Aiming
 
-    Vector2 worldPos;
-    Vector2 _direction;
-    float angle;
+    //Vector2 worldPos;
+    //Vector2 _direction;
+    //float angle;
+    public Transform twist;
     void GunRotation()
     {
         //Get Mouse Position
@@ -98,7 +100,17 @@ public class PickUp : MonoBehaviour
 
 
 
+        //Vector3 localScale = new Vector3(1,1,1);
+        //if(angle > 90 ||  angle < -90)
+        //{
+            //localScale.y = -1;
+        //}
+        //else
+        //{
+        //    localScale.y = 1;
+        //}
 
-
+       // weapon.transform.localScale = localScale;
+        
     }
 }
