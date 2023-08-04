@@ -6996,7 +6996,7 @@ GameObject:
   m_Component:
   - component: {fileID: 843592052}
   - component: {fileID: 843592051}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MapHolder/BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
