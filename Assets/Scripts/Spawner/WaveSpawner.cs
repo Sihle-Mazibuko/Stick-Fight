@@ -59,7 +59,7 @@ public class WaveSpawner : MonoBehaviour
         guns = GameObject.FindGameObjectsWithTag("Weapon");
         GameObject[] gunsInstance = guns;
 
-        if (playerOneHealth == 0|| playerTwoHealth == 0)
+        if (playerOneHealth == 0 || playerTwoHealth == 0)
         {
 
             foreach (GameObject gun in gunsInstance)
@@ -81,6 +81,8 @@ public class WaveSpawner : MonoBehaviour
         else
         {
             Debug.Log("there are no scenes");
+            nextScene = 0;
+            SceneManager.LoadScene(nextScene);
         }
     }
 
