@@ -10,25 +10,13 @@ public class StartScreenButtons : MonoBehaviour
         SceneManager.LoadScene("LevelOne");
     }
 
-<<<<<<< Updated upstream
     public void Quit()
-=======
-    public void HomeScreen()
-    {
-        SceneManager.LoadScene("StartScene");
-    }
-
-    public void LeaveGame()
->>>>>>> Stashed changes
     {
         Application.Quit();
     }
 
-<<<<<<< Updated upstream
     public void Reset()
     {
         SceneManager.LoadScene("StartScene");
     }
-=======
->>>>>>> Stashed changes
 }
