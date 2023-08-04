@@ -117,7 +117,7 @@ public class Movement2 : MonoBehaviour
 
     private void Flip()
     {
-        if (isFaceRight && horizontal < 0f || !isFaceRight && horizontal > 0f)
+        if (isFaceRight && horizontal > 0f || !isFaceRight && horizontal < 0f)
         {
             isFaceRight = !isFaceRight;
             Vector3 localscale = transform.localScale;
