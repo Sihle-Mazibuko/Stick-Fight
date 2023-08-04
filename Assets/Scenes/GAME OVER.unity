@@ -412,7 +412,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2137592420}
         m_TargetAssemblyTypeName: StartScreenButtons, Assembly-CSharp
-        m_MethodName: HomeScreen
+        m_MethodName: Reset
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -648,7 +648,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2137592420}
         m_TargetAssemblyTypeName: StartScreenButtons, Assembly-CSharp
-        m_MethodName: LeaveGame
+        m_MethodName: Quit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
