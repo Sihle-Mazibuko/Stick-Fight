@@ -7,6 +7,8 @@ public class Health : MonoBehaviour
     public float startHealth;
     public float currentHealth;
 
+    public GameObject killFloor;
+
     private void Awake()
     {
         startHealth = 100;
@@ -33,5 +35,7 @@ public class Health : MonoBehaviour
         {
             TakeDamage(90);
         }
+
+
     }
 }
