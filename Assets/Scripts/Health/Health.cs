@@ -16,7 +16,7 @@ public class Health : MonoBehaviour
 
     public void TakeDamage(float _damage)
     {
-        currentHealth -= _damage;
+        currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startHealth);
 
         if (currentHealth > 0)
         {
@@ -33,16 +33,9 @@ public class Health : MonoBehaviour
         GameObject killfloor = GameObject.FindGameObjectWithTag("Killfloor");
         if (killfloor != null)
         {
-            currentHealth = 0;
+            TakeDamage(100);
         }
 
     }
 
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.U))
-        {
-            TakeDamage(90);
-        }
-    }
 }
