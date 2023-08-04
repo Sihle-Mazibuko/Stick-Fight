@@ -8,17 +8,15 @@ public class Guns : MonoBehaviour
 
     [SerializeField] GameObject bulletPref;
     [SerializeField]Transform bulletSpawnPoint;
-    public bool isPlayer1;
 
 
-    public int damage, clipSize, bulletsPerTap, range;
+    public int damage, clipSize, bulletsPerTap;
     public float timeBetweenShooting, spread, timeBetweenShots;
     public bool allowButtonHold;
 
     int bulletsLeft, bulletsShot;
     bool shooting, readyToShoot;
 
-    [SerializeField] LayerMask playerLayer;
 
     RaycastHit2D hit;
 
