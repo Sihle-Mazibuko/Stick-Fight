@@ -13,7 +13,7 @@ public class PickUpTwo : MonoBehaviour
     [SerializeField]
     private LayerMask gunMask;
 
-    private void FixedUpdate()
+    private void Update()
     {
         GunRotation();
         if (Input.GetKeyDown(KeyCode.F))
