@@ -8,6 +8,7 @@ public class Guns : MonoBehaviour
 
     [SerializeField] GameObject bulletPref;
     [SerializeField]Transform bulletSpawnPoint;
+    public bool isPlayer1;
 
 
     public int damage, clipSize, bulletsPerTap, range;
@@ -30,7 +31,7 @@ public class Guns : MonoBehaviour
         readyToShoot = true;
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         Debug.Log(isEquipped);
 
@@ -48,8 +49,20 @@ public class Guns : MonoBehaviour
 
     void MyInput()
     {
-        if (allowButtonHold) shooting = Input.GetKey(KeyCode.Mouse0);
-        else shooting = Input.GetKeyDown(KeyCode.Mouse0);
+        GameObject parent = GameObject.Find("WeaponHolder");
+        //Debug.Log(LayerMask.GetMask(mask.ToString()));
+
+        if (parent.GetComponent<Movement1>())
+        {
+            if (allowButtonHold) shooting = Input.GetKey("Fire1");
+            else shooting = Input.GetKeyDown("Fire1");
+        }
+        
+        if (parent.GetComponent<Movement1>())
+        {
+            if (allowButtonHold) shooting = Input.GetKey(KeyCode.Mouse0);
+            else shooting = Input.GetKeyDown(KeyCode.Mouse0);
+        }
 
         if (readyToShoot && shooting && bulletsLeft > 0)
         {
