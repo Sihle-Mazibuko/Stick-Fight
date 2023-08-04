@@ -195,6 +195,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6714337796616750683, guid: 1cfd44d4ea3af5e4a85ef6d43a5e576b, type: 3}
   m_PrefabInstance: {fileID: 182903049}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &13026798
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 923743464080072529, guid: c0e1c28ad88f11e4ca71cc40cea8cc7a, type: 3}
+      propertyPath: m_Name
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 923743464080072554, guid: c0e1c28ad88f11e4ca71cc40cea8cc7a, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 923743464080072554, guid: c0e1c28ad88f11e4ca71cc40cea8cc7a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.659067
+      objectReference: {fileID: 0}
+    - target: {fileID: 923743464080072554, guid: c0e1c28ad88f11e4ca71cc40cea8cc7a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.734953
+      objectReference: {fileID: 0}
+    - target: {fileID: 923743464080072554, guid: c0e1c28ad88f11e4ca71cc40cea8cc7a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 923743464080072554, guid: c0e1c28ad88f11e4ca71cc40cea8cc7a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 923743464080072554, guid: c0e1c28ad88f11e4ca71cc40cea8cc7a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 923743464080072554, guid: c0e1c28ad88f11e4ca71cc40cea8cc7a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 923743464080072554, guid: c0e1c28ad88f11e4ca71cc40cea8cc7a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 923743464080072554, guid: c0e1c28ad88f11e4ca71cc40cea8cc7a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 923743464080072554, guid: c0e1c28ad88f11e4ca71cc40cea8cc7a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 923743464080072554, guid: c0e1c28ad88f11e4ca71cc40cea8cc7a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c0e1c28ad88f11e4ca71cc40cea8cc7a, type: 3}
 --- !u!1001 &17041506
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -296,7 +353,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 79862270}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ' PILLAR'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -789,7 +846,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 144222505}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: '"PILLAR" (1)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1284,7 +1341,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 216534996}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SpawnPoints (3)
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -1723,7 +1780,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 281149956}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ' PILLAR (1)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3002,7 +3059,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 472457926}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: STRUCTURE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3844,7 +3901,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 538605918}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SUPPORTS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4578,13 +4635,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 606860590}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LEVEL 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &606860590
 Transform:
   m_ObjectHideFlags: 0
@@ -5057,7 +5114,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 671548992}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: STRUCTURE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5108,7 +5165,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 674259886}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: UPPER PLATFORM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5466,7 +5523,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 722158608}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LEVEL 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6036,7 +6093,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 769592239}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MIDDLE PLATFORM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6487,7 +6544,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 823354687}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: '"PILLAR" (3)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6771,7 +6828,7 @@ GameObject:
   m_Component:
   - component: {fileID: 843592052}
   - component: {fileID: 843592051}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MapHolder/BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6847,7 +6904,7 @@ Transform:
   - {fileID: 1622102790}
   - {fileID: 722158608}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &848911652
 PrefabInstance:
@@ -8280,7 +8337,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1003247168}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SpawnPoints (1)
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -8559,7 +8616,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1034911987 stripped
 Transform:
@@ -8575,7 +8632,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1035313537}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FLOOR BOXES
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8856,7 +8913,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1052965398}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: STRUCTURE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8908,7 +8965,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1053504158}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PILLARS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9867,7 +9924,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1145627750}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SUPPORTS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10444,7 +10501,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1230680335}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SUPPORTS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10722,17 +10779,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cfd44d4ea3af5e4a85ef6d43a5e576b, type: 3}
---- !u!114 &1249939344 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3928063674860917492, guid: 83461cfe8d7b80d4fa7a07596b884b49, type: 3}
-  m_PrefabInstance: {fileID: 3928063675775311204}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34f74a7aa98ff3746be5c801fc855149, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1255009624
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10947,7 +10993,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1302701419}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ' PILLAR (2)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11000,7 +11046,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1316837043}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SpawnPoints
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -11034,7 +11080,7 @@ GameObject:
   - component: {fileID: 1338135099}
   - component: {fileID: 1338135098}
   - component: {fileID: 1338135097}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BEAM (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11444,7 +11490,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1386169033}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BOXES
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11815,7 +11861,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1477279270}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LOWER PLATFORM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12110,7 +12156,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1500714854}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SUPPORTS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12448,7 +12494,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1588116360}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: STRUCTURE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12713,7 +12759,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1622102790}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LEVEL 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12750,7 +12796,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1628830573}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SpawnPoints (2)
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -12846,7 +12892,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1639510236}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ' PILLAR'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13632,7 +13678,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1742052653}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6, y: 4.86, z: 0}
+  m_LocalPosition: {x: -4.69, y: 4.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -13640,7 +13686,7 @@ Transform:
   - {fileID: 1138102655}
   - {fileID: 1925455697}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1742052658
 MonoBehaviour:
@@ -13732,7 +13778,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1745802834}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: STRUCTURE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14019,7 +14065,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1776030591}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: '"PILLAR"'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15090,7 +15136,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1844396976
 PrefabInstance:
@@ -15435,7 +15481,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1897649310}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: '"PILLAR" (2)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15826,7 +15872,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1972382320}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ' PILLAR (3)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16101,7 +16147,7 @@ MonoBehaviour:
     gunSpawnPoint: {fileID: 1003247168}
   players:
   - {fileID: 1742052658}
-  - {fileID: 1249939344}
+  - {fileID: 0}
   animator: {fileID: 2009829432}
   waveName: {fileID: 435169934}
 --- !u!4 &2009829431
@@ -16118,7 +16164,7 @@ Transform:
   m_Children:
   - {fileID: 871277469}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &2009829432
 Animator:
@@ -16154,7 +16200,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2017525090}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ' PILLAR (1)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17010,7 +17056,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2073428680}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LEVEL ONE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17394,7 +17440,7 @@ GameObject:
   - component: {fileID: 2136379546}
   - component: {fileID: 2136379545}
   - component: {fileID: 2136379544}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BEAM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17839,60 +17885,3 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2146485966}
   m_CullTransparentMesh: 1
---- !u!1001 &3928063675775311204
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3928063674860917480, guid: 83461cfe8d7b80d4fa7a07596b884b49, type: 3}
-      propertyPath: m_Name
-      value: PLAYER 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3928063674860917495, guid: 83461cfe8d7b80d4fa7a07596b884b49, type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3928063674860917495, guid: 83461cfe8d7b80d4fa7a07596b884b49, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3928063674860917495, guid: 83461cfe8d7b80d4fa7a07596b884b49, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.86
-      objectReference: {fileID: 0}
-    - target: {fileID: 3928063674860917495, guid: 83461cfe8d7b80d4fa7a07596b884b49, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3928063674860917495, guid: 83461cfe8d7b80d4fa7a07596b884b49, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3928063674860917495, guid: 83461cfe8d7b80d4fa7a07596b884b49, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3928063674860917495, guid: 83461cfe8d7b80d4fa7a07596b884b49, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3928063674860917495, guid: 83461cfe8d7b80d4fa7a07596b884b49, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3928063674860917495, guid: 83461cfe8d7b80d4fa7a07596b884b49, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3928063674860917495, guid: 83461cfe8d7b80d4fa7a07596b884b49, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3928063674860917495, guid: 83461cfe8d7b80d4fa7a07596b884b49, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 83461cfe8d7b80d4fa7a07596b884b49, type: 3}
