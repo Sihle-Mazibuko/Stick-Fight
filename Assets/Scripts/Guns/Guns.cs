@@ -33,7 +33,7 @@ public class Guns : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(isEquipped);
+        Debug.Log(readyToShoot);
 
         if (transform.parent != null)
         {
@@ -62,6 +62,7 @@ public class Guns : MonoBehaviour
         {
             if (allowButtonHold) shooting = Input.GetKey(KeyCode.Mouse0);
             else shooting = Input.GetKeyDown(KeyCode.Mouse0);
+            Debug.Log("shoot");
         }
 
         if (readyToShoot && shooting && bulletsLeft > 0)
