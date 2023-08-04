@@ -17,7 +17,7 @@ public class GunHandler : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.F) || Input.GetKeyDown(KeyCode.B))
+        if (Input.GetKeyDown("Fire1") || Input.GetKeyDown(KeyCode.B))
         {
             ThrowWeapon();
         }
