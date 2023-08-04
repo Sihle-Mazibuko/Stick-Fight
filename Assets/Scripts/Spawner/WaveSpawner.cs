@@ -33,7 +33,7 @@ public class WaveSpawner : MonoBehaviour
     [SerializeField] Animator animator;
     [SerializeField] TextMeshProUGUI waveName;
 
-    
+    bool canAnimate = false;
 
     private void LateUpdate()
     {
@@ -49,7 +49,7 @@ public class WaveSpawner : MonoBehaviour
 
 
 
-        if (playerOneHealth == 0|| playerTwoHealth == 0)
+        if ((playerOneHealth == 0|| playerTwoHealth == 0) && canAnimate && currentWaveNUmber+1 != stages.Length)
         {
 
             playerOneHealth += 100;
@@ -62,6 +62,7 @@ public class WaveSpawner : MonoBehaviour
             Debug.Log("a player died");
             waveName.text = stages[currentWaveNUmber + 1].stageName;
             animator.SetTrigger("WaveDone");
+            canAnimate = false;
 
         }
     }
@@ -71,14 +72,12 @@ public class WaveSpawner : MonoBehaviour
         currentWaveNUmber++;
         CanSpawn = true;
         currentWave.map.SetActive(false);
-        var playerOneHealth = players[0].GetComponent<Health>().currentHealth;
-        var playerTwoHealth = players[1].GetComponent<Health>().currentHealth;
-
-        playerOneHealth += 100;
-        playerTwoHealth += 100;
 
 
-
+        foreach (var player in players)
+        {
+            //player.currentHealth = 100;
+        }
     }
 
     void SpawnWave()
@@ -94,6 +93,7 @@ public class WaveSpawner : MonoBehaviour
             if (currentWave.numOfGuns == 0)
             {
                 CanSpawn = false;
+                canAnimate = true;
             }
         }
     }
