@@ -13,10 +13,10 @@ public class PickUp : MonoBehaviour
     [SerializeField]
     private LayerMask gunMask;
 
-    private void FixedUpdate()
+    private void Update()
     {
         GunRotation();
-        if (Input.GetKeyDown(KeyCode.B))
+        if (Input.GetButtonDown("Fire2"))
         {
             ThrowWeapon();
         }
@@ -80,19 +80,19 @@ public class PickUp : MonoBehaviour
        weapon.transform.right = _direction;
 
         //Flip when aiming back
-        angle = Mathf.Atan2(_direction.y, _direction.x) * Mathf.Rad2Deg;
+        //angle = Mathf.Atan2(_direction.y, _direction.x) * Mathf.Rad2Deg;
 
-        Vector3 localScale = new Vector3(1,1,1);
-        if(angle > 90 ||  angle < -90)
-        {
-            localScale.y = -1;
-        }
-        else
-        {
-            localScale.y = 1;
-        }
+        //Vector3 localScale = new Vector3(1,1,1);
+        //if(angle > 90 ||  angle < -90)
+        //{
+            //localScale.y = -1;
+        //}
+        //else
+        //{
+        //    localScale.y = 1;
+        //}
 
-        weapon.transform.localScale = localScale;
+       // weapon.transform.localScale = localScale;
         
     }
 }

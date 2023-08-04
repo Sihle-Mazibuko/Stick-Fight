@@ -123,6 +123,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPref: {fileID: 6040350289286467386, guid: 79248d3611639c849ab389d042df0652, type: 3}
   bulletSpawnPoint: {fileID: 7513516714625402763}
+  mask:
+    serializedVersion: 2
+    m_Bits: 0
   damage: 25
   clipSize: 15
   bulletsPerTap: 1
