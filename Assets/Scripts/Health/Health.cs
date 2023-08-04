@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    public float startHealth;
-    public float currentHealth;
+     float startHealth;
+     public float currentHealth { get; private set; }
 
 
     private void Awake()
