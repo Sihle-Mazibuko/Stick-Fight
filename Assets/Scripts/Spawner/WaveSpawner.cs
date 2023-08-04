@@ -81,8 +81,6 @@ public class WaveSpawner : MonoBehaviour
         else
         {
             Debug.Log("there are no scenes");
-            nextScene = 0;
-            SceneManager.LoadScene(nextScene);
         }
     }
 
@@ -105,28 +103,4 @@ public class WaveSpawner : MonoBehaviour
 
 
 
-    //void CompleteLevel()
-    //{
-    //    int currentLevel = SceneManager.GetActiveScene().buildIndex;
-
-    //    if(currentLevel >= PlayerPrefs.GetInt("levelAt"))
-    //    {
-    //        PlayerPrefs.SetInt("levelAt", currentLevel);
-    //    }
-    //    Debug.Log("level " + PlayerPrefs.GetInt("levelAt") + " is unlocked");
-    //}
-
-    //IEnumerator EndOfLevelChoices()
-    //{
-    //    if (isLevelThree)
-    //    {
-    //        yield return new WaitForSeconds(1.8f);
-    //        SceneManager.LoadScene("GAME COMPLETE");
-    //    }
-    //    if (!isLevelThree)
-    //    {
-    //        yield return new WaitForSeconds(1.5f);
-    //        SceneManager.LoadScene(nextSceneLoad);
-    //    }
-    //}
 }
